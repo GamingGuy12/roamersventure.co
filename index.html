@@ -51,6 +51,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Existing Login/Signup Modals -->
     <div class="modal fade" id="logIn">
         <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
@@ -107,6 +109,84 @@
             </div>
         </div>
     </div>
+
+    <!-- Resource Modals -->
+    <div class="modal fade" id="hazardModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Hazard Insurance</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our comprehensive coverage includes repatriation of remains, emergency medical airlifting, and
+                        high-altitude rescue. Standard policies do not apply in active war zones or deep-sea expeditions
+                        without a premium rider.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="extractionModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Extraction Points</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Real-time satellite coordinates for our global extraction network. In the event of a comms
+                        blackout, proceed to the secondary rally point identified in your pre-trip briefing packet. Look
+                        for the infrared strobe signals.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="equipmentModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Equipment Rental</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rent professional-grade hardware including satellite phones, Geiger counters, chemical suits, and
+                        off-road recovery gear. All equipment is stress-tested in simulated extreme environments before
+                        being issued.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="safeZoneModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Safe Zones</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Verified neutral territories and fortified shelters maintained by Roamers & Co. partners. These
+                        zones provide secure rest, water filtration, and medical supplies. Currently, access is
+                        restricted to Pro-Tier members only.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -163,11 +243,14 @@
                     expeditions to the most inhospitable environments on Earth.</p>
                 <h3 class="mt-4">Survival Resources</h3>
                 <ul class="nav nav-pills flex-column">
-                    <li class="nav-item"><a class="nav-link active" href="#" style="background-color: #dc3545;">Hazard
-                            Insurance</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Extraction Points</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Equipment Rental</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#">Safe Zones</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" data-bs-toggle="modal"
+                            data-bs-target="#hazardModal" style="background-color: #dc3545;">Hazard Insurance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#extractionModal">Extraction Points</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#equipmentModal">Equipment Rental</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#safeZoneModal">Safe Zones</a></li>
                 </ul>
                 <hr class="d-sm-none">
             </div>
